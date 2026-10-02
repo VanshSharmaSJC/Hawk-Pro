@@ -8,6 +8,7 @@ const stats = [
 
 export default function App() {
   const [active, setActive] = useState("Overview");
+  const [notice, setNotice] = useState("");
 
   return (
     <main className="app">
@@ -18,7 +19,11 @@ export default function App() {
             <button
               className={active === item ? "nav-link active" : "nav-link"}
               key={item}
-              onClick={() => setActive(item)}
+              aria-current={active === item ? "page" : undefined}
+              onClick={() => {
+                setActive(item);
+                setNotice(`${item} view selected`);
+              }}
             >
               {item}
             </button>
@@ -41,6 +46,8 @@ export default function App() {
             </article>
           ))}
         </div>
+
+        <div className="sr-only" role="status" aria-live="polite">{notice}</div>
 
         <section className="activity">
           <div>
