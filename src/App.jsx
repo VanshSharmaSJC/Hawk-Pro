@@ -12,14 +12,15 @@ export default function App() {
 
   return (
     <main className="app">
-      <nav className="nav">
+      <header className="nav">
         <div className="brand">Hawk-Pro</div>
-        <div className="nav-links">
+        <nav className="nav-links" aria-label="Primary navigation">
           {["Overview", "Projects", "Activity"].map((item) => (
             <button
               className={active === item ? "nav-link active" : "nav-link"}
               key={item}
               aria-current={active === item ? "page" : undefined}
+              type="button"
               onClick={() => {
                 setActive(item);
                 setNotice(`${item} view selected`);
@@ -28,8 +29,8 @@ export default function App() {
               {item}
             </button>
           ))}
-        </div>
-      </nav>
+        </nav>
+      </header>
 
       <section className="hero">
         <p className="eyebrow">CONTROL CENTER</p>
