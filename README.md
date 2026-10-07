@@ -22,3 +22,7 @@ The project is intentionally structured for small, meaningful improvements: UI p
 ## Development notes
 
 Small UI and accessibility improvements are added incrementally as the dashboard evolves.
+
+## Dashboard
+
+The dashboard surfaces workspace metrics and provides lightweight navigation between views.
