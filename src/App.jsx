@@ -1,9 +1,11 @@
 import { useState } from "react";
 
 const stats = [
+
   { label: "Projects", value: "12" },
   { label: "Tasks completed", value: "84" },
   { label: "Team members", value: "06" },
+  { label: "Active sprint", value: "04" },
 ];
 
 export default function App() {
