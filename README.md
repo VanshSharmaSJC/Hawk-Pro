@@ -18,3 +18,7 @@ npm run build
 ## Daily development
 
 The project is intentionally structured for small, meaningful improvements: UI polish, accessibility, reusable components, tests, and feature work.
+
+## Development notes
+
+Small UI and accessibility improvements are added incrementally as the dashboard evolves.
