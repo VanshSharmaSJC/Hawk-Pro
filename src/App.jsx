@@ -60,6 +60,7 @@ export default function App() {
           <p className="muted">Hawk-Pro is ready for the next improvement.</p>
         </section>
       </section>
+      <footer className="footer">Hawk-Pro · React + Vite</footer>
     </main>
   );
 }
