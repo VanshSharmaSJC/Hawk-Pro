@@ -73,6 +73,10 @@ h1 { max-width: 700px; margin: 12px 0; font-size: clamp(3rem, 8vw, 6rem); line-h
 .activity { margin-top: 16px; padding: 24px; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
 .activity h2 { margin: 6px 0 0; }
 
+@media (max-width: 900px) {
+  .stats { grid-template-columns: repeat(2, 1fr); }
+}
+
 @media (max-width: 700px) {
   .nav { align-items: flex-start; gap: 20px; }
   .nav-links { flex-wrap: wrap; justify-content: flex-end; }
