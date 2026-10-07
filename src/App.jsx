@@ -15,7 +15,7 @@ export default function App() {
   return (
     <main className="app">
       <header className="nav">
-        <div className="brand">Hawk-Pro</div>
+        <a className="brand" href="/" aria-label="Hawk-Pro home">Hawk-Pro</a>
         <nav className="nav-links" aria-label="Primary navigation">
           {["Overview", "Projects", "Activity"].map((item) => (
             <button
