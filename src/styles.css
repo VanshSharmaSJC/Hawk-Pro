@@ -33,7 +33,7 @@ button { font: inherit; }
   align-items: center;
 }
 
-.brand { font-size: 1.2rem; font-weight: 800; letter-spacing: .04em; }
+.brand { color: inherit; text-decoration: none; font-size: 1.2rem; font-weight: 800; letter-spacing: .04em; }
 
 .nav-links { display: flex; gap: 8px; }
 
